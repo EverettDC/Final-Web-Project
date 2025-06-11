@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0047ab;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #prop-1-div {
+            background-color: #0047ab;
+            display: grid;
+            grid-template-columns: auto;
+            border: black 2px solid;
+            margin-top: 2%;
+            overflow: scroll;
+        }
+        #prop-1-h1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #prop-1-img {
+            display: grid;
+            margin: 4%;
+            align-self: center;
+        }
+        #prop-1-p {
+            margin-left: 3%;
+            font-size: 130%;
+        }
+        #prop-2-div {
+            background-color: #0047ab;
+            display: grid;
+            margin-top: 2%;
+            border: black 2px solid;
+            overflow: scroll;
+        }
+        #prop-2-h1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #prop-2-img {
+            display: grid;
+            margin: 4%;
+            align-self: center;
+        }
+        #prop-2-p {
+            margin-left: 3%;
+            font-size: 130%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Two</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <h1 id="nh1">ProjectF</h1>
+        <div class="nav-links"><a href="index.html" class="nav-links">Home</a></div>
+        <div class="nav-links"><a href="book1.html" class="nav-links">Sample&nbsp;1</a></div>
+        <div class="nav-links"><a href="book2.html" class="nav-links">Sample&nbsp;2</a></div>
+        <div class="nav-links"><a href="why.html" class="nav-links">Why&nbsp;ProjectF?</a></div>
+    </nav>
+    <main>
+        <header>
+            <h1>Book Two</h1>
+        </header>
+        <div id="prop-1-div">
+            <div id="prop-1-h1"><h1>Proposition One</h1></div>
+            <div id="prop-1-img">
+                <img style="border-right: white 4px solid;" src="Images/euc-b2-p1-a.png" alt="Diagram and translated original text of proposition one from Euclid's Elements.">
+                <img src="Images/euc-b2-p1-b.png" alt="Translated original text of proposition one from Euclid's Elements.">
+            </div>
+            <div id="prop-1-p">
+                <p>
+                    <h2>Title</h2>
+                    <span style="text-decoration: underline;">If there are two straight-lines, and one of them is cut into any number of pieces whatsoever, then the rectangle contained by the two straight-lines is equal to the (sum of the) rectangles contained by the uncut (straight-line),and every one of the pieces (of the cut straight-line). <br><br></span>
+                    This means, if you have two straight lines and one of them is cut into a random number of pieces the rectangle that can be made by the two straight lines will be equal to all the rectangles that are made by the cut line and the original line <br><br>
+                    <h2>Main Body</h2>
+                    <span style="text-decoration: underline;">Let A and BC be the two straight-lines, and let BC be cut, at random, at points D and E. I say that the rectangle contained by A and BC is equal to the rectangle(s)contained by A and BD, by A and DE, and, finally, by A and EC. <br><br></span>
+                    This means that A is one of the specified straight lines (it doesn't need a second letter because it is sperate as you can see in the diagram) and BC is the other line, we cut BC at two points making D and E. So, the rectangle that lines A and BC make will be equal to the three rectangles (A and BD, A and DE and A and EC) combined. <br><br>
+                    <span style="text-decoration: underline;">For let BF have been drawn from point B, at right angles to BC, and let BG be made equal to A, and let GH have been drawn through (point) G, parallel to BC, and let DK, EL, and CH have been drawn through (points) D, E, and C (respectively), parallel to BG. <br><br></span>
+                    This is telling us to make line BF at a righ angle to line BC then plot point G along that line so that the new line BG is equal to line A. The we make the new line GH starting at G and parallel to line BC. Then along the new GH line we make lines DK EL and CH so that they are paralle with line BG, this leaves us with three rectangles contained by a larger one. <br><br>
+                    <span style="text-decoration: underline;">So the (rectangle) BH is equal to the (rectangles) BK, DL, and EH. And BH is the (rectangle contained) by A and BC. For it is contained by GB and BC, and BG (is) equal to A. <br><br></span>
+                    This means that the larger rectangle BH that contains the three smaller rectangles BK, DL, and EH is equal to all three of the smaller rectangles combined. BH is the rectangle that is made using the lines BC and BG but since BG is equal to A the rectangle is technically made by lines A and BC, <br><br>
+                    <span style="text-decoration: underline;">And BK (is) the (rectangle contained) by A and BD. For it is contained by GB and BD, and BG (is) equal to A. And DL (is) the (rectangle contained) by A and DE. For DK, that is to say BG, (is) equal to A. Similarly, EH (is) also the (rectangle contained) by A and EC. Thus, the (rectangle contained) by A and BC is equal to the (rectangles contained) by A and BD, by A and DE, and, finally, by A and EC. <br><br></span>
+                    This says that rectangle BK (one of the smaller rectangles) is contained by A and BD because it is contained by BD and BG, but we already know that BG is equal to A. The same goes for rectangle DL, it is the rectangle contained by A and DE because DK is equal to BG and BG is equal to A. The same goes for rectangle EH. So, with that since lines BD, DE and EC are the line BC cut into pieces and lines BG, DK and EL are all equal to A, the rectangle made by A and BC is equal to the rectangles made by A and BD, by A and DE, and by A and EC. <br><br>
+                    <h2>Conclusion</h2>
+                    Thus, if there are two straight-lines, and one of them is cut into any number of pieces whatsoever, then the rectangle contained by the two straight-lines is equalto the (sum of the) rectangles contained by the uncut (straight-line), and every one of the pieces (of the cutstraight-line). (Which is) the very thing it was required to show.<br><br>
+                </p>
+            </div>
+        </div>
+        <div id="prop-2-div">
+            <div id="prop-2-h1"><h1>Proposition Two</h1></div>
+            <div id="prop-2-img">
+                <img id="prop-2-img-b" src="Images/euc-b2-p2.png" alt="Diagram and translated original text of proposition two from Euclid's Elements.">
+            </div>
+            <div id="prop-2-p">
+                <p>
+                    <!--Honestly, I chose this one because I was terrified of running out of time-->
+                    <h2>Title</h2>
+                    <span style="text-decoration: underline;">If a straight-line is cut at random then the (sum of the) rectangle(s) contained by the whole (straight-line), and each of the pieces (of the straight-line), is equal to the square on the whole. <br><br></span>
+                    <h2>Main Body</h2>
+                    <span style="text-decoration: underline;">For let the straight-line AB have been cut at random, at point C. I say that the rectangle contained by AB and BC, plus the rectangle contained by BA and AC, is equal to the square on AB. <br><br></span>
+                    <span style="text-decoration: underline;">For let the square ADEB have been described on AB [Prop. 1.46], and let CF have been drawn through C,parallel to either of AD or BE <br><br></span>
+                    <span style="text-decoration: underline;">So, the (square) AE is equal to the (rectangles) AF and CE. And AE is the square on AB. And AF (is) the rectangle contained by the (straight-lines) BA and AC. For it is contained by DA and AC, and AD (is) equal to AB. And CE (is) the (rectangle contained) by AB and BC. For BE (is) equal to AB. Thus, the (rectangle contained) by BA and AC, plus the (rectangle contained) byAB and BC, is equal to the square on AB. <br><br></span>
+                    The reason there is very little explanation for this one is because, this proposition is the same as the one above except it is with a square.
+                    <h2>Conclusion</h2>
+                    <span style="text-decoration: underline;">Thus, if a straight-line is cut at random then the (sumof the) rectangle(s) contained by the whole (straight-line), and each of the pieces (of the straight-line), is equalto the square on the whole. (Which is) the very thing it was required to show.</span>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <!--Sign Up sheet-->
+            <form method="get">
+                <fieldset id="form-fieldset">
+                    <legend>Sign Up</legend>
+                    <div id="name-form">
+                        <label for="firstname">Name:</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </div>
+                    <div id="email-form">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="place-form">
+                        <label for="place">Location:</label><br>
+                        <select name="place" id="place" required>
+                            <option value="Online">Online</option>
+                            <option value="In Person">In Person</option>
+                        </select><br>
+                        <label for="physlocation">Only enter if choosing in person</label><br>
+                        <input type="text" name="physlocation" id="physlocation" placeholder="Physical location">
+                    </div>
+                    <div id="time-form">
+                        <label for="time">Time:</label><br>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div id="submit-form">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" name="submit" placeholder="submit">
+                    </div><br><br>
+                </fieldset>
+            </form>
+            <h1>Contacts</h1>
+            <div id="contacts-div">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fnlp%3d0&sdf=0" target="_blank"><img src="Images/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Link to Email" id="email-img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram-logo.jpeg" alt=" Link to Instagram" id="insta-img"></a>
+                <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F" target="_blank"><img src="Images/Yahoo-Logo-Vector.jpg" alt="Link to Yahoo" id="yahoo-img"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

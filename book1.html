@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0047ab;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #prop-1-div {
+            background-color: #0047ab;
+            display: grid;
+            border: black 2px solid;
+            margin-top: 2%;
+        }
+        #prop-1-h1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #prop-1-img {
+            margin: 2%;
+            height: 65%;
+            align-self: center;
+        }
+        #prop-1-p {
+            margin-left: 5%;
+            padding-right: 1%;
+            overflow: scroll;
+            font-size: 130%;
+        }
+        #prop-2-div {
+            background-color: #0047ab;
+            display: grid;
+            grid-template-columns: auto;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #prop-2-h1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #prop-2-img {
+            display: grid;
+            margin: 2%;
+            align-self: center;
+        }
+        #prop-2-p {
+            font-size: 130%;
+            overflow: scroll;
+            margin-left: 5%;
+            padding-right: 1%;
+        }
+    </style> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book One</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <h1 id="nh1">ProjectF</h1>
+        <div class="nav-links"><a href="index.html" class="nav-links">Home</a></div>
+        <div class="nav-links"><a href="book1.html" class="nav-links">Sample&nbsp;1</a></div>
+        <div class="nav-links"><a href="book2.html" class="nav-links">Sample&nbsp;2</a></div>
+        <div class="nav-links"><a href="why.html" class="nav-links">Why&nbsp;ProjectF?</a></div>
+    </nav>
+    <main>
+        <header>
+            <h1>Book One</h1>
+        </header>
+        <div id="prop-1-div">
+            <div id="prop-1-h1"><h1>Proposition One</h1></div>
+            <div id="prop-1-img"><img id="prop-1-img" src="Images/euc-prop-1.jpeg.png" alt="Diagram and translated original text of proposition one from Euclid's Elements."></div>
+            <div id="prop-1-p">
+                <p>
+                    <h2>Title</h2>
+                    Every proposition has one and it just tells the reader what the proposition is supposed to show, these always go above the diagram. <br><br>
+                    <span style="text-decoration: underline;">To construct an equilateral triangle on a given finite straight-line.</span><br><br>
+                    This means, that the diagram will show you how to make an equilateral triangle on a straight line of a given length. <br><br>
+                    <h2>Main Body</h2>
+                    The main body text can look big and scary but in truth, most of it is to tell you how the diagram is supposed to look. It always goes after the title section, and it can go above or  below the diagram or even a little bit above and below. <br><br>
+                    <span style="text-decoration: underline;">Let AB be the given finite straight-line. So, it is required to construct an equilateral triangle on the straight-line AB.</span> <br><br>
+                    This says that the base of the equilateral triangle will be line AB. <br><br>
+                    <span style="text-decoration: underline;">Let the circle BCD with center A and radius AB have been drawn and again let the circle ACE with center B and radius BA have been drawn. And let the straight-lines CA and CB have been joined from the point C, where the circles cut one another, to the points A and B (respectively)</span><br><br>
+                    This says that you have two circles, one has A as its center and the other has B as its center; both have the line AB as their radius. With this you end up with a Ven Diagram shape with a line going through the part where they overlap. <br><br>
+                    <span style="text-decoration: underline;">And since the point A is the center of the circle CDB,&nbsp;AC is equal to AB. Again, since the point B is the center of the circle CAE, BC is equal to BA. But CA was also shown (to be) equal to AB. Thus, CA and CB are each equal to AB. But things equal to the same thing are also equal to one another. Thus, CA is also equal to CB. Thus, the three (straight lines) CA,&nbsp;AB, and BC are equal to one another.</span><br><br>
+                    This says that since line AB is the radius of both circles, any line drawn from the center of the circles to the edge is equal to any other line with the same limitations. With this we can plot point C at the top of where the circles overlap so that it is on the edge of both circles and then connect A to C with line AC and B to C with line BC. Since we know that these lines are all the radii of the same circle, we know that they are exactly equal and therefore an equilateral triangle. <br><br>
+                    <h2>Conclusion</h2>
+                    <span style="text-decoration: underline;">Thus, the triangle ABC is equilateral, and has been constructed on the given finite straight-line AB. (Which is) the very thing it was required to do.</span><br><br>
+                    This last part that always starts with “thus” is reiterating the title section with evidence provided by the main body section. <br>
+                </p>
+            </div>
+        </div>
+        <div id="prop-2-div">
+            <div id="prop-2-h1"><h1>Proposition Two</h1></div>
+            <div id="prop-2-img">
+                <img id="prop-2-img-a" src="Images/euc-prop-2-a.png" alt="Translated original text of proposition two from Euclid's Elements."><a href=""></a>
+                <img id="prop-2-img-b" src="Images/euc-prop-2-b.png" alt="Diagram and translated original text of proposition two from Euclid's Elements.">
+            </div>
+            <div id="prop-2-p">
+                <p>
+                    <h2>Title</h2>
+                    <span style="text-decoration: underline;">To place a straight-line equal to a given straight-line at a given point (as an extremity).<br><br></span>
+                    This diagram will show how to take a straight line at one place and make another line that is equal to the first line at a separate point. <br><br>
+                    <h2>Main Body</h2>
+                    <span style="text-decoration: underline;">Let A be the given point, and BC the given straight line. So, it is required to place a straight-line at point A, equal to the given straight-line BC. <br><br></span>
+                    This tells us that the point we want our new line to go on is point A and the line we want to place there is equal to line BC. <br><br>
+                    <span style="text-decoration: underline;">For let the straight-line AB have been joined from point A to point B and let the equilateral triangle DAB have been constructed upon it. <br><br></span>
+                    Connect points A and B with a line then connect those two to the new point D in an equilateral triangle, (if you were making the diagram by hand, you would use proposition 1 to do this).<br><br>
+                    <span style="text-decoration: underline;">And let the straight-lines AE and BF have been produced in a straight-line with DA and DB (respectively). <br><br></span>
+                    This tells you to continue the lines DA to point E, in other words make line DE. Do the same thing with DB but continue the line to point F instead of point E. <br><br>
+                    <span style="text-decoration: underline;">And let the circle CGH with center B and radius BC have been drawn and again let the circle GKL with center D and radius DG have been drawn. <br><br></span>
+                    This tells you to draw a circle with B as its center and BC as its radius and a second circle with D as its center and the new line DG as its radius with point G placed on line DF. <br><br>
+                    <span style="text-decoration: underline;">Therefore, since the point B is the center of (the circle) CGH, BC is equal to BG. Again, since the point D is the center of the circle GKL, DL is equal to DG <br><br></span>
+                    Since B is the center of the small circle and both BG and BC go to the edge of the circle, they are the radii and are equal. The same goes for D being the center of the larger circle with DG and DL both being radii <br><br>
+                    <span style="text-decoration: underline;">And within these, DA is equal to DB. Thus, the remainder AL is equal to the remainder BG. <br><br></span>
+                    This means that since DG and DL are equal to each other, if you take way the D line and leave the AL and BG, they are equal because you are taking away the D section of the line which is equal on both lines. <br><br>
+                    <span style="text-decoration: underline;">But BC was also shown (to be) equal to BG. Thus, AL and BC are each equal to BG. But things equal to the same thing are also equal to one another. Thus, AL is also equal to BC. <br><br></span>
+                    Since as previously stated BC is equal to BG and as the book says, things that are equal to the same thing are also equal to each other. And so finally weve come full circle and a line (AL) we have made starting at A is equal to the given straight-line BC. <br><br>
+                    <h2>Conclusion</h2>
+                    <span style="text-decoration: underline;">Thus, the straight-line AL, equal to the given straight-line BC, has been placed at the given point A. (Which is) the very thing it was required to do. <br><br></span>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <!--Sign Up sheet-->
+            <form method="get">
+                <fieldset id="form-fieldset">
+                    <legend>Sign Up</legend>
+                    <div id="name-form">
+                        <label for="firstname">Name:</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </div>
+                    <div id="email-form">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="place-form">
+                        <label for="place">Location:</label><br>
+                        <select name="place" id="place" required>
+                            <option value="Online">Online</option>
+                            <option value="In Person">In Person</option>
+                        </select><br>
+                        <label for="physlocation">Only enter if choosing in person</label><br>
+                        <input type="text" name="physlocation" id="physlocation" placeholder="Physical location">
+                    </div>
+                    <div id="time-form">
+                        <label for="time">Time of appointment:</label><br>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div id="submit-form">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" name="submit" placeholder="submit">
+                    </div><br><br>
+                </fieldset>
+            </form>
+            <h1>Contacts</h1>
+            <div id="contacts-div">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fnlp%3d0&sdf=0" target="_blank"><img src="Images/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Link to Email" id="email-img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram-logo.jpeg" alt=" Link to Instagram" id="insta-img"></a>
+                <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F" target="_blank"><img src="Images/Yahoo-Logo-Vector.jpg" alt="Link to Yahoo" id="yahoo-img"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

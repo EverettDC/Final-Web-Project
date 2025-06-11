@@ -1,0 +1,135 @@
+* {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+body {
+    padding: 5%;
+}
+p {
+    font-size: 130%;
+}
+/*Start of Nav CSS*/
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0047ab;
+    border: black 2px solid;
+    align-items: center;
+}
+#nh1 {
+    margin-left: 2%;
+    flex-grow: 8;
+    text-align: left;
+}
+.nav-links {
+    margin: 2%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+/*End of Nav CSS*/
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 350%;
+    background-color: #0047ab;
+}
+h2 {
+    color: yellow;
+    font-size: 200%;
+}
+/*The CSS for the sign up sheet*/
+footer {
+    background-color: #0047ab;
+    margin-top: 2%;
+    padding: 2%;
+    border: black 2px solid;
+}
+#form-fieldset {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10%;
+}
+legend {
+    text-align: center;
+    color: yellow;
+    font-size: 350%;
+}
+input {
+    color: black;
+}
+select {
+    color: black;
+}
+option {
+    color: black;
+}
+#name-form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+}
+#email-form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+#place-form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#time-form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#submit-form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+#contacts-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email-img {
+    width: 10%;
+    height: 10%;
+    transform: translate(200px, 0px);
+}
+#insta-img {
+    width: 15%;
+    height: 15%;
+    transform: translate(100px, 0px);
+}
+#yahoo-img {
+    width: 20%;
+    height: 20%;
+    transform: translate(200px, 0px);
+}
+button {
+    color: black;
+}
+/*This is css from the old nav bar that I'm keeping, just in case.
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+l1 {
+    margin: 2;
+}*/

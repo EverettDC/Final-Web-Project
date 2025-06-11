@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0047ab;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #reasons-div {
+            background-color: #0047ab;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #r1 {
+            text-align: center;
+            width: 20%;
+        }
+        #r1-img {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        #r2 {
+            text-align: center;
+            width: 20%;
+        }
+        #r2-img {
+            width: 100%;
+            height: 100%;
+        }
+        button {
+            background-color: #0047ab;
+            color: yellow;
+            margin-bottom: 10%;
+            border: black 2px solid;
+        }
+        button:hover {
+            text-decoration: underline;
+            background-color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why ProjectF</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <h1 id="nh1">ProjectF</h1>
+        <div class="nav-links"><a href="index.html" class="nav-links">Home</a></div>
+        <div class="nav-links"><a href="book1.html" class="nav-links">Sample&nbsp;1</a></div>
+        <div class="nav-links"><a href="book2.html" class="nav-links">Sample&nbsp;2</a></div>
+        <div class="nav-links"><a href="why.html" class="nav-links">Why&nbsp;ProjectF?</a></div>
+    </nav>
+    <main>
+        <header>
+            <h1>Why Should You Choose ProjectF?</h1>
+        </header>
+        <div id="reasons-div">
+            <div id="r1">
+                <h2>Concentration</h2>
+                <img id="r1-img">
+                <button onclick="document.getElementById('r1-img').src='Images/conlear.png';
+                this.style.display='none';
+                ">Expand</button>
+            </div>
+            <div id="r2">
+                <h2>Understanding</h2>
+                <img id="r2-img">
+                <button onclick="document.getElementById('r2-img').src='Images/r2-pic.png';
+                this.style.display='none';
+                ">Expand</button>
+            </div>
+        </div>
+        <footer>
+            <!--Sign Up sheet-->
+            <form method="get">
+                <fieldset id="form-fieldset">
+                    <legend>Sign Up</legend>
+                    <div id="name-form">
+                        <label for="firstname">Name:</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </div>
+                    <div id="email-form">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="place-form">
+                        <label for="place">Location:</label><br>
+                        <select name="place" id="place" required>
+                            <option value="Online">Online</option>
+                            <option value="In Person">In Person</option>
+                        </select><br>
+                        <label for="physlocation">Only enter if choosing in person</label><br>
+                        <input type="text" name="physlocation" id="physlocation" placeholder="Physical location">
+                    </div>
+                    <div id="time-form">
+                        <label for="time">Time:</label><br>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div id="submit-form">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" name="submit" placeholder="submit">
+                    </div><br><br>
+                </fieldset>
+            </form>
+            <h1>Contacts</h1>
+            <div id="contacts-div">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fnlp%3d0&sdf=0" target="_blank"><img src="Images/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Link to Email" id="email-img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram-logo.jpeg" alt="Link to Instagram" id="insta-img"></a>
+                <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F" target="_blank"><img src="Images/Yahoo-Logo-Vector.jpg" alt="Link to Yahoo" id="yahoo-img"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

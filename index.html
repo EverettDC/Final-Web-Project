@@ -1,0 +1,192 @@
+<!--Everett Chlan
+Web Dev 10s
+Ms. Hoitink
+Pembina Trails Collegaite
+DLM 6/11/2025
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0047ab;
+            margin-top: 2%;
+            border: black 2px solid;
+        }
+        #hdiv {
+            border: black 2px solid;
+            background-color: #0047ab;
+            margin-top: 2%;
+        }
+        #hh1 {  
+            text-align: left;
+        }
+        #euc-div {
+            background-color: #0047ab;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            border: black 2px solid;
+        }
+        #euc-h1 {
+            border-bottom: black 2px solid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #euc-div-txt {
+            text-align: center;
+            align-content: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        #euc-pic {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            width: 100%;
+            height: 100%;
+        }
+        #euc-pic-2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            width: 100%;
+            height: 100%;
+        }
+        #ab-div {
+            background-color: #0047ab;
+            border: black 2px solid;
+        }
+        #ab-flx-div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #abme {
+            border-right: black 1px solid;
+            border-top: black 2px solid;
+            width: 50%;
+            padding: 2%;
+        }
+        #qual {
+            border-left: black 1px solid;
+            border-top: black 2px solid;
+            width: 50%;
+            padding: 2%;
+        }
+        li {
+            font-size: 130%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectF</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <h1 id="nh1">ProjectF</h1>
+        <div class="nav-links"><a href="index.html" class="nav-links">Home</a></div>
+        <div class="nav-links"><a href="book1.html" class="nav-links">Sample&nbsp;1</a></div>
+        <div class="nav-links"><a href="book2.html" class="nav-links">Sample&nbsp;2</a></div>
+        <div class="nav-links"><a href="why.html" class="nav-links">Why&nbsp;ProjectF?</a></div>
+    </nav>
+    <main>
+        <div id="hdiv"><h1 id="hdiv-h1">Learn Euclids Elements of Geometry</h1></div>
+        <header>
+            <h1 id="hh1">Learn more.<br>Faster.</h1>
+            <img id="himg" src="Images/Grad-hat.jpeg" alt="Picture of a hat worn when graduating university, it is squared on top.">
+        </header>
+        <div id="euc-div">
+            <div id="euc-h1"><h1>Euclid</h1></div>
+            <div id="euc-div-txt"><p id="euc-div-txt">Euclid is a Greek mathmatician who lived over 2000 years ago. <br> He is often called the Father of Geometry because of his boundless <br> knowledge of geometry this is shown in his book entitled:</p><a id="euc-ele-pdf" href="https://farside.ph.utexas.edu/Books/Euclid/Elements.pdf" target="_blank" style="font-size: 130%; font-family: 'Times New Roman', Times, serif; border: yellow, 2px solid;">Euclid's Elements of Geometry</a></div>
+            <div id="euc-pic"><img id="euc-pic" src="Images/euclid-of-alexandria.jpeg" alt="A picture of an old Euclid in white robes with a long beard and silky headdress, he is drawing shapes on parchment with a rudimentary pen."></div>
+            <div id="euc-pic-2"><img id="euc-pic-2" src="Images/ele-page.jpeg" alt="a quarter of a page from Euclid's Elements, it is torn and green."></a></div>
+        </div>
+        <!--About Me section-->
+        <div id="ab-div">
+            <h1 id="ab-h1">About Your Tutor</h1>
+            <div id="ab-flx-div">
+                <div id="abme">
+                    <h1>About Me 
+                    <!--This href to nothing is used for anyone tabbing through the website to see the whole About Me section-->
+                    <a href=""></a>
+                    </h1>
+                    <p>
+                        <ul>
+                            <li>My name is Everett</li>
+                            <li>I am a genius</li>
+                            <li>I love reading</li>
+                            <li>My favourite book series is the First Law Trilogy</li>
+                            <li>I am an avid historian</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="qual">
+                    <h1>Qualifications</h1>
+                    <p>
+                        <ul>
+                            <li>I have a Ph.D. in physics</li>
+                            <li>I have been studying these books since I was 10</li>
+                            <li>I am a certified genius</li>
+                            <li>I taught myself this on my own so I am able to explain it</li>
+                            <li>I am very patient</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!--Sign Up sheet-->
+            <form method="get">
+                <fieldset id="form-fieldset">
+                    <legend>Sign Up</legend>
+                    <div id="name-form">
+                        <label for="firstname">Name:</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </div>
+                    <div id="email-form">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="place-form">
+                        <label for="place">Location:</label><br>
+                        <select name="place" id="place" required>
+                            <option value="Online">Online</option>
+                            <option value="In Person">In Person</option>
+                        </select><br>
+                        <label for="physlocation">Only enter if choosing in person</label><br>
+                        <input type="text" name="physlocation" id="physlocation" placeholder="Physical location">
+                    </div>
+                    <div id="time-form">
+                        <label for="time">Time:</label><br>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div id="submit-form">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" name="submit" placeholder="submit">
+                    </div><br><br>
+                </fieldset>
+            </form>
+            <h1>Contacts</h1>
+            <div id="contacts-div">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fnlp%3d0&sdf=0" target="_blank"><img src="Images/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Link to Email" id="email-img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram-logo.jpeg" alt=" Link to Instagram" id="insta-img"></a>
+                <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F" target="_blank"><img src="Images/Yahoo-Logo-Vector.jpg" alt="Link to Yahoo" id="yahoo-img"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
